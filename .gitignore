@@ -1,0 +1,8 @@
+# Dependency directories
+node_modules/
+.vscode
+*.log
+build/
+dist/
+*.code-workspace
+.DS_Store

@@ -1,0 +1,8 @@
+{
+  "name": "reques-react-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/csforbes/reques-react-app.git",
+  "author": "Caleb Forbes <caleb.s.forbes@gmail.com>",
+  "license": "MIT"
+}
