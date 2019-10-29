@@ -1,4 +1,6 @@
-const webpack = require('webpack');
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js',
@@ -15,15 +17,19 @@ module.exports = {
         extensions: ['*', '.js', '.jsx']
     },
     output: {
-      path: __dirname + '/dist',
+      path: path.resolve(__dirname, '../', 'dist'),
       publicPath: '/',
       filename: 'bundle.js'
     },
     plugins: [
-        new webpack.HotModuleReplacementPlugin()
+        new CleanWebpackPlugin(),
+        new HtmlWebpackPlugin({
+            title: 'Hello Webpack React (with plugins)',
+            template: './src/index.html',
+        })
     ],
     devServer: {
       contentBase: './dist',
       hot: true,
-    }
-  };
+    },
+};
