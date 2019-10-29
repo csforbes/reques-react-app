@@ -1,4 +1,3 @@
-// const webpack = require('webpack');
 const { HotModuleReplacementPlugin, DefinePlugin } = require('webpack');
 
 module.exports = {
