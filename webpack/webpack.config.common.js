@@ -26,8 +26,4 @@ module.exports = {
             template: './src/index.html',
         })
     ],
-    devServer: {
-      contentBase: './dist',
-      hot: true,
-    },
 };
